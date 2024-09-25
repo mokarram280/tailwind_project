@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .news{
+        @apply flex flex-col md:flex-row items-center justify-center gap-6 px-1 py-2 border border-[#DDE2E5] mt-5 hover:scale-105 transition-all duration-300 cursor-pointer;
+    }
+    .mini-tag{
+        @apply text-xs bg-[#5677AC26] px-1.5 py-0.5 font-semibold uppercase rounded-sm cursor-pointer hover:text-white hover:bg-black transition dark:hover:bg-[#5677AC] dark:bg-slate-400;
+    }
+    .news-letter{
+        @apply bg-[#E6EBF3] w-full py-2 md:py-4 rounded-full text-[#333] font-medium md:text-lg text-center hover:scale-105 transition duration-300 cursor-pointer;
+    }
+}
